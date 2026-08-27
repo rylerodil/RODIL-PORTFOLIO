@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Quiz | Rylee Rodil</title>
+
+</head>
+
+<body data-category="quiz">
+
+    <!-- BACKGROUND -->
+    <div class="stars"></div>
+    <div class="glow-orb orb-one"></div>
+    <div class="glow-orb orb-two"></div>
+
+    <!-- NAVIGATION -->
+    <header>
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">&lt;/&gt;</span>
+            <span>Rylee Rodil</span>
+        </a>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="quiz.html" class="active">
+                Quiz
+            </a>
+
+            <a href="laboratory.html">
+                Laboratory
+            </a>
+
+            <a href="exam.html">
+                Exam
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- QUIZ PAGE -->
+    <section class="portfolio-page">
+
+        <div class="page-title reveal-up">
+
+            <div class="page-icon">
+                <i class="fa-solid fa-circle-question"></i>
+            </div>
+
+            <h1>
+                My <span>Quizzes</span>
+            </h1>
+
+            <p>
+                Upload your quiz files here. You can add images,
+                PDF files, documents, and other activity files.
+                Click View to open the file.
+            </p>
+
+        </div>
+
+
+        <!-- TOOLBAR -->
+        <div class="file-toolbar reveal-up">
+
+            <span id="fileCount" class="file-count">
+                0 files saved
+            </span>
+
+            <label for="fileInput" class="upload-button">
+
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                Add Quiz File
+
+            </label>
+
+            <input
+                id="fileInput"
+                type="file"
+                multiple
+                hidden>
+
+        </div>
+
+
+        <!-- FILE GRID -->
+       <div id="fileGrid" class="file-grid">
+
+    <div class="file-card reveal-up">
+
+        <div class="file-preview">
+
+            <img src="quiz1.png"
+                 alt="Quiz 1 Screenshot">
+
+        </div>
+
+        <div class="file-info">
+
+            <div class="file-icon">
+                <i class="fa-solid fa-image"></i>
+            </div>
+
+            <div class="file-details">
+
+                <h3>Quiz 1</h3>
+
+                <p>Quiz 1 Screenshot</p>
+
+            </div>
+
+        </div>
+
+        <div class="file-actions">
+
+            <button
+                class="view-button"
+                onclick="viewQuizImage()">
+
+                <i class="fa-solid fa-eye"></i>
+                View
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </section>
+
+
+    <!-- FILE MODAL -->
+    <div id="fileModal" class="file-modal">
+
+        <div class="modal-box">
+
+            <div class="modal-head">
+
+                <strong id="modalTitle">
+                    File
+                </strong>
+
+                <button id="closeModal" class="close-modal">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+            <div id="modalContent" class="modal-content"></div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            © 2026 Rylee Rodil
+        </p>
+
+        <span>
+            Quiz Portfolio
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

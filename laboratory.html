@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Laboratory | Rylee Rodil</title>
+
+</head>
+
+<body data-category="laboratory">
+
+    <div class="stars"></div>
+    <div class="glow-orb orb-one"></div>
+    <div class="glow-orb orb-three"></div>
+
+
+    <!-- NAVIGATION -->
+    <header>
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                &lt;/&gt;
+            </span>
+
+            <span>
+                Rylee Rodil
+            </span>
+
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="quiz.html">
+                Quiz
+            </a>
+
+            <a href="laboratory.html" class="active">
+                Laboratory
+            </a>
+
+            <a href="exam.html">
+                Exam
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- LABORATORY -->
+    <section class="portfolio-page">
+
+        <div class="page-title reveal-up">
+
+            <div class="page-icon">
+                <i class="fa-solid fa-flask"></i>
+            </div>
+
+            <h1>
+                My <span>Laboratories</span>
+            </h1>
+
+            <p>
+                Keep your laboratory activities organized in one place.
+                Add images, PDFs, text files, or documents and open
+                them anytime.
+            </p>
+
+        </div>
+
+
+        <div class="file-toolbar reveal-up">
+
+            <span id="fileCount" class="file-count">
+                0 files saved
+            </span>
+
+            <label for="fileInput" class="upload-button">
+
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                Add Laboratory File
+
+            </label>
+
+            <input
+                id="fileInput"
+                type="file"
+                multiple
+                hidden>
+
+        </div>
+
+
+   <div id="fileGrid" class="file-grid">
+
+    <div class="file-card reveal-up">
+
+        <div class="file-preview pdf-preview">
+
+            <i class="fa-solid fa-file-pdf"></i>
+
+        </div>
+
+        <div class="file-info">
+
+            <div class="file-icon">
+                <i class="fa-solid fa-flask"></i>
+            </div>
+
+            <div class="file-details">
+
+                <h3>Laboratory 1</h3>
+
+                <p>RODIL_LAB1.pdf</p>
+
+            </div>
+
+        </div>
+
+        <div class="file-actions">
+
+            <button
+                class="view-button"
+                onclick="viewLabFile()">
+
+                <i class="fa-solid fa-eye"></i>
+                View
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </section>
+
+
+    <!-- MODAL -->
+    <div id="fileModal" class="file-modal">
+
+        <div class="modal-box">
+
+            <div class="modal-head">
+
+                <strong id="modalTitle">
+                    File
+                </strong>
+
+                <button id="closeModal" class="close-modal">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+            <div id="modalContent" class="modal-content"></div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            © 2026 Rylee Rodil
+        </p>
+
+        <span>
+            Laboratory Portfolio
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
